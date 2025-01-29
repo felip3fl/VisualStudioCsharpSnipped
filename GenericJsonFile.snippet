@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Generic Json Class</Title>
+			<Shortcut>GenericJsonClass</Shortcut>
+			<Description>Objeto Classe generica</Description>
+			<Author>Felip3FL</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Name</ID>
+					<Default>jsonObject</Default>
+					<ToolTip>Name</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+                    var $Name$ = new JsonObject()
+                    {
+                        ["descricao"] = "Plataforma .NET",
+                        ["anoInicial"] = 2002,
+                        ["pessoasChave"] = new JsonArray("Anders Hejlsberg", "Scott Hanselman", "Mads Torgersen", "Miguel de Icaza"),
+                        ["ferramentas"] = new JsonObject
+                        {
+                            ["microsoft"] = new JsonArray("Visual Studio 2019", "Visual Studio 2022", "Visual Studio Code"),
+                            ["jetBrains"] = "Rider"
+                        }
+                    };
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

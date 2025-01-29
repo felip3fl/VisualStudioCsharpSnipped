@@ -11,7 +11,7 @@
 			<Declarations>
 				<Literal>
 					<ID>FolderAddress</ID>
-					<Default>Onedrive\\TestFolder</Default>
+					<Default>Onedrive/TestFolder</Default>
 					<ToolTip>Folder Address</ToolTip>
 				</Literal>
 				<Literal>
@@ -24,10 +24,10 @@
 				<![CDATA[
 			// by Felip3FL
 			var tempo = DateTime.Now.Ticks.ToString().Substring(12, 6);
-			var folderAddress = $$"C:\\Users\\{Environment.UserName}\\$FolderAddress$";
+			var folderAddress = $$"C:/Users/{Environment.UserName}/$FolderAddress$";
 			System.IO.Directory.CreateDirectory(folderAddress);
 			var serializedObject = Newtonsoft.Json.JsonConvert.SerializeObject($Object$, Newtonsoft.Json.Formatting.Indented);
-			System.IO.File.WriteAllText($$"{folderAddress}\\{tempo}.json", serializedObject);
+			System.IO.File.WriteAllText($$"{folderAddress}/{tempo}.json", serializedObject);
 			Console.WriteLine("\n\n\n" + serializedObject);
 				]]>
 			</Code>
