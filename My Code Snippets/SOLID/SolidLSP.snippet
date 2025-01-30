@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>SOLID LSP</Title>
+			<Shortcut>SolidSLP</Shortcut>
+			<Description>Show a example of SLP (SOLID)</Description>
+			<Author>Felip3FL</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+	// by Felip3FL
+	public abstract class BankAccount
+	{
+		public decimal Balance { get; protected set; }
+		public abstract void Withdraw(decimal amount);
+	}
+
+	public class ChekingAccoutn : BankAccount
+	{
+		public override void Withdraw(decimal amount)
+		{
+			throw new NotImplementedException();
+		}
+	}
+
+	public class SavingsAccount : BankAccount
+	{
+		public override void Withdraw(decimal amount)
+		{
+			throw new NotImplementedException();
+		}
+	}
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
