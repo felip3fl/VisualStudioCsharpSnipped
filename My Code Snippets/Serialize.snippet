@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Serialize</Title>
+			<Shortcut>seria</Shortcut>
+			<Description>Serialize object</Description>
+			<Author>Felip3FL</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Objeto</ID>
+					<Default>Objeto</Default>
+					<ToolTip>Objeto</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+					var objetoSerializado = Newtonsoft.Json.JsonConvert.SerializeObject($Objeto$, Newtonsoft.Json.Formatting.Indented);
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
