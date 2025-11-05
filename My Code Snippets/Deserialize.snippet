@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Deserialize</Title>
+			<Shortcut>deseria</Shortcut>
+			<Description>Deserialize object</Description>
+			<Author>Felip3FL</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Tipo</ID>
+					<Default>Tipo</Default>
+					<ToolTip>Qual tipo da classe</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>Texto</ID>
+					<Default>Texto</Default>
+					<ToolTip>Texto</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+					$Tipo$ objetoDeserializado = Newtonsoft.Json.JsonConvert.DeserializeObject<$Tipo$>($Texto$);
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
