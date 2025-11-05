@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Converte Objeto</Title>
+			<Shortcut>converteObjeto</Shortcut>
+			<Description>Converte Objeto para outro</Description>
+			<Author>Felip3FL</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Objeto</ID>
+					<Default>Objeto</Default>
+					<ToolTip>Objeto</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>ObjetoOriginal</ID>
+					<Default>ObjetoOriginal</Default>
+					<ToolTip>Objeto original que será convertido</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+					var objetoConvertido = JsonConvert.DeserializeObject<$Objeto$>(JsonConvert.SerializeObject($ObjetoOriginal$));
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
